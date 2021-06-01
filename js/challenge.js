@@ -4,6 +4,9 @@ let plus = document.getElementById('plus');
 let pause = document.getElementById('pause');
 const commentForm = document.getElementById('comment-form');
 const commentList = document.querySelector('#list');
+let likesList = document.querySelector('.likes')
+const heartLikes = {}
+console.log(likesList);
 
 
 
@@ -15,6 +18,7 @@ function incrementCounter () {
    counter.innerText = parseInt(counter.innerText) + 1
    minus.addEventListener('click', handleMinus)
    plus.addEventListener('click', handlePlus)
+   heart.addEventListener('click', handleHeart)
    pause.addEventListener('click', handlePause)
   
 
@@ -40,9 +44,33 @@ function handlePause() {
         counter();
 
     })
-//     // keep track of stop point above, then 
-
 }
+
+    function handleHeart() {
+        const time = parseInt(counter.innerText)
+        heartLikes[time] ? heartLikes[time] += 1 : heartLikes[time] = 1
+        if (document.getElementById(`like-${time}`)) {
+            document.getElementById(`like-${time}`).innerText = `${time} was clicked ${heartLikes[time]} times` 
+
+        } else {
+        console.log(heartLikes);
+        newLike = document.createElement('li')
+        newLike.id = `like-${time}`
+        newLike.innerText = (`${time} has been clicked ${heartLikes[time]} times`)
+        }
+        console.log(newLike)
+        likesList.appendChild(newLike)
+    }
+        // console.log(newLike)
+        
+        // likesList().appendChild += (newLike);
+    
+        
+
+    
+//     // keep track of stop point above, then 
+    
+
 
 commentForm.addEventListener('submit', function(e){
     e.preventDefault()
