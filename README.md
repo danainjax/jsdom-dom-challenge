@@ -2,11 +2,11 @@
 
 If you open up index.html in the browser, you'll find a small application. It has a few features:
 
-* A Counter that increases by 1 each second
-* Plus and Minus buttons that increment or decrement the counter
+* [X] A Counter that increases by 1 each second
+*  [X] Plus and Minus buttons that increment or decrement the counter
 * A 'like' button (❤️) that adds a 'like' for the number that is currently
   displayed by the timer
-* A comment box that adds comments when submitted
+ * [X] A comment box that adds comments when submitted
 
 First, take a few minutes to explore and test out the behavior of the page.
 Think about how each of the features must work. What must be happening
@@ -28,9 +28,9 @@ functionality working as you build.
 > Note: These deliverables are written in the form of _User Stories_. They
 > describe the features from the perspective of a user when they visit the page.
 
-1. As a user, I should see the timer increment every second once the page has
+[X] 1.  As a user, I should see the timer increment every second once the page has
    loaded.
-2. As a user, I can manually increment and decrement the counter using the plus
+[X] 2. As a user, I can manually increment and decrement the counter using the plus
    and minus buttons.
 3. As a user, I can 'like' an individual number of the counter. I should see the
    count of the number of 'likes' associated with that number displayed.
@@ -42,7 +42,7 @@ functionality working as you build.
   
 5. As a user, I should be able to click the "restart" button to restart the
    counter and re-enable the buttons.
-6. As a user, I can leave comments on my gameplay, such as: "Wow, what a fun
+[X] 6. As a user, I can leave comments on my gameplay, such as: "Wow, what a fun
    game this is."
 
 ## Hint for the timer
